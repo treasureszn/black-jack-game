@@ -16,7 +16,9 @@
  let playerEl = document.getElementById("player-el")
 
 
- 
+ function reload() {
+    location.reload()
+ }
 
 
  function generateCard() {
@@ -48,6 +50,7 @@
           hasBlackJack = true
       } else {
           message = "Bummer, You're out of the game"
+          setTimeout(reload, 2000);
           isAlive = false
       }
      
